@@ -2,13 +2,13 @@ import ItemModel from "../models/Empleado";
 import { Empleado } from "../interfaces/empleado.interface";
 import EmpleadoModelo from "../models/Empleado";
 
-const insertCar = async (item:Empleado) =>{
+const insertEmpleado = async (item:Empleado) =>{
 
 const responseInsert = await ItemModel.create(item);
 return responseInsert;
 };
 
-const getCars = async () =>{
+const getEmpleados = async () =>{
 
     const resultado = await EmpleadoModelo.aggregate(
         [
@@ -28,13 +28,13 @@ const getCars = async () =>{
     };
     
 
-    const getCar = async (id:string) =>{
+    const getEmpleado = async (id:string) =>{
 
         const car = await ItemModel.findOne({ _id : id });
         return car;
         };
         
-    const updateCar = async (id:string, data: Empleado) =>{
+    const updateEmpleado = async (id:string, data: Empleado) =>{
 
             const car = await ItemModel.findOneAndUpdate({ _id : id }, 
                 data,
@@ -46,7 +46,7 @@ const getCars = async () =>{
             return car;
             };
 
-            const deleteCar = async (id:string) =>{
+            const deleteEmpleado = async (id:string) =>{
 
                 const car = await ItemModel.updateOne({ _id : id },
                     { $set: { estado: false}
@@ -56,4 +56,4 @@ const getCars = async () =>{
                     return car;
                 };
             
-export {insertCar,getCars,getCar,updateCar,deleteCar};
+export {insertEmpleado,getEmpleado,getEmpleados,updateEmpleado,deleteEmpleado};
