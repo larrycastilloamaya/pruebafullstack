@@ -14,6 +14,7 @@ La principal diferencia entre HTTP y HTTPS es la seguridad.
 El protocolo HTTPS impide que terceros puedan interceptar 
 la información confidencial que se transfiere entre el cliente y el servidor web a 
 través de Internet. 
+
 # ¿Qué es un API y cuáles funciones tiene?
 Un api es un intermediario que permite que los programas se comuniquen yy trabajen con la ifnormacion
 disponible que ha sido creada por otros desarrolladores.
@@ -27,14 +28,8 @@ Sectores enteros pueden cambiar con la llegada de una nueva aplicación.
 3. Ampliación
 Las API presentan una oportunidad única para que las empresas satisfagan las necesidades de sus clientes en diferentes plataformas.
 4. Facilidad de mantenimiento
-La API actúa como una puerta de enlace entre dos sistemas. Cada sistema está obligado a hacer cambios internos para que la API no se vea afectada. De este modo, cualquier cambio futuro que haga una de las partes en el código no afectará a la otra.
 
--La distribuidora de libros podría realizar cambios en sus sistemas internos sin afectar a los clientes, 
-siempre y cuando el comportamiento de la API fuera el mismo.
-
--Con una API disponible de forma pública, los desarrolladores, podrían desarrollar una aplicación para ayudar a los clientes a encontrar los libros que necesiten. Esto podría dar como resultado mayores ventas u otras oportunidades comerciales.
-
-#¿Qué es un commit y un rollback?
+# ¿Qué es un commit y un rollback?
 Un commit se utiliza para terminar un trabajo y confirma los cambios en la base datos realizados por 
 esa unidad de trabajo.
 Un rollback se utiliza para restituir los cambios que se han hecho en la base de datos dentro de una transacción.
@@ -53,7 +48,9 @@ no clúster y cada entrada de valor de clave tiene un puntero a la fila de datos
 Una diferencia es que las funciones siempre retornan un valor, mientras que un procedimiento almacenado puede que retorne un valor o puede que no lo haga. 
 Otra diferencia muy importante para los desarrolladores es que los procedimientos almacenados pueden ser invocados desde el entorno de desarrollo.
 
-# ¿Qué es un ORM? Un ORM es una herramienta de software que automatiza el mapeo entre el modelo de datos y el esquema entidad-relación. Algunas ventajas son:
+# ¿Qué es un ORM? 
+
+Un ORM es una herramienta de software que automatiza el mapeo entre el modelo de datos y el esquema entidad-relación. Algunas ventajas son:
 1. Agiliza el desarrollo y reduce la cantidad de código al automatizar el mapeo permitiendo generar las clases entidad a partir de una base de datos existente, o viceversa. 
 2. Independiza la aplicación del tipo de base de datos (SQL Server, Oracle, MySQL… ), permitiendo la obtención de datos usando objetos y métodos sin escribir consultas SQL.
 # ¿Cómo encontrarías las consultas que más consumen en una aplicación?
